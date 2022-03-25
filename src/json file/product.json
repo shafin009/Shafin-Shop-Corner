@@ -1,0 +1,62 @@
+[
+    {
+        "id": "623de6",
+        "price": "$3921",
+        "picture": "https://lappyvalley.com/wp-content/uploads/2021/08/81GKNQqV9mS._AC_SL1500_-1.jpg",
+        "name": "Dell Laptop"
+    },
+    {
+        "id": "1e185a8bdb8",
+        "price": "$3080",
+        "picture": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Apple_MacBook_Pro_14_unboxing_video_and_comparison_drdNBC.jpg",
+        "name": "Apple Laptop"
+    },
+    {
+        "id": "e7eae51e1b8",
+        "price": "$4560",
+        "picture": "https://p1-ofp.static.pub/fes/cms/2021/06/24/zl904glt4d997rbc7poynqnlu3lxka303435.jpg",
+        "name": "Lenovo PC"
+    },
+    {
+        "id": "db87eae",
+        "price": "$8512",
+        "picture": "https://m.media-amazon.com/images/I/71luYyAPVTL._AC_SL1500_.jpg",
+        "name": "Apple Watch"
+    },
+    {
+        "id": "bdb87eawrtr",
+        "price": "$1000",
+        "picture": "https://taipeicomputer.jo/image/cache/catalog/Products/Software/windows_10_pro-1200x1200.jpg",
+        "name": "Windows 10 Package"
+    },
+    {
+        "id": "e7eae51e623de6b",
+        "price": "$2050",
+        "picture": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/thumbnail/lead/news/8353062_New%20Project.jpg",
+        "name": "Walton TV"
+    },
+    {
+        "id": "623de6be7623de6b",
+        "price": "$6000",
+        "picture": "https://i.ytimg.com/vi/S0V20PHPR4M/maxresdefault.jpg",
+        "name": "java full Course"
+    },
+    {
+        "id": "623dedb",
+        "price": "$7554",
+        "picture": "https://www.ephotozine.com/articles/Canon-EOS-1Ds-MkIII-vs-Nikon-D3-8201/images/Canon_eos_1ds_mkiii_main.jpg",
+        "name": "Canon D3"
+    },
+    {
+        "id": "ae51e185a8",
+        "price": "$2000",
+        "picture": "https://www.binarylogic.com.bd/images/product_image/iGe9B.jpg",
+        "name": "Intel core I"
+    },
+    {
+        "id": "dfdsds55654dsbdb",
+        "price": "$9012",
+        "picture": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-tab-s-105-1.jpg",
+        "name": "Samsung Galaxy Tab S"
+    }
+]
