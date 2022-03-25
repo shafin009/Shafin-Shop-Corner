@@ -1,0 +1,12 @@
+.nav {
+    background-color: rosybrown;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding-left: 30px;
+    padding-right: 60px;
+    
+  }
+  
