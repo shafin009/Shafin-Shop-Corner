@@ -1,23 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import './Shop.css'
+import Device from '../Device Component/Device';
 
 const Shop = () => {
 
-    useEffect = (() => {
+    const [devices, setdevices] = useState([]);
 
-        const [device, setdevice] = useState([]);
-    
-        fetch('myfile.json')
+    useEffect(() => {
+
+        fetch('data.json')
             .then(res => res.json())
-            .then(data => console.log(data))
-    }, [])
+            .then(data => setdevices(data))
+    }, []);
 
 
 
     return (
         <div className='shop'>
+
             <div className="shop-container">
-                <h2>Here is Products</h2>
+
+                {
+                    devices.map(device => <Device
+                        key={device.id}
+                        device={device}
+
+                    ></Device>)
+                }
             </div>
             <div className="cart-container">
                 <h2>Choosen Products</h2>

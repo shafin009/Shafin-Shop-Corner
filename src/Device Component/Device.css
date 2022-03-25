@@ -1,0 +1,22 @@
+.device{
+    width: 300px;
+    height: 425px;
+    border:1px solid black;
+}
+
+
+.device img{
+    width: 250px;
+    height: 250px;
+
+}
+
+.device-name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size:21px;
+    line-height: 25px;
+    font-style: italic;
+
+
+}
