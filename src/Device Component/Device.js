@@ -8,8 +8,13 @@ const Device = (props) => {
     return (
         <div className='device'>
             <img src={picture} alt="" />
-            <h5 className='device-name'>Name:{name}</h5>
-            <h5 className='device-name'>Price:{price}</h5>
+            <div className='device-name'>
+                <h5>Name: {name}</h5>
+                <h5>Price: {price}</h5>
+            </div>
+            <button onClick={() => props.cart(props.device)} className='cart'>
+                <p>Add To Cart</p>
+            </button>
         </div>
     );
 };

@@ -14,6 +14,13 @@ const Shop = () => {
     }, []);
 
 
+    const cart = (device) => {
+        console.log(device);
+
+
+
+    }
+
 
     return (
         <div className='shop'>
@@ -24,6 +31,7 @@ const Shop = () => {
                     devices.map(device => <Device
                         key={device.id}
                         device={device}
+                        cart={cart}
 
                     ></Device>)
                 }
