@@ -1,21 +1,32 @@
 import React from 'react';
-import './Device.css'
+// import './Device.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 const Device = (props) => {
     const { name, picture, price } = props.device;
 
 
     return (
-        <div className='device'>
-            <img src={picture} alt="" />
-            <div className='device-name'>
-                <h5>Name: {name}</h5>
-                <h5>Price: {price}</h5>
+
+        <div className="col">
+            <div className="card h-100">
+                <img src={picture} className="card-img-top img-fluid" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">Name: {name}</h5>
+                    <p className="card-text">Price: {price}</p>
+                    <button onClick={() => props.addcart(props.device)} type="button" className="btn btn-danger btn-sm">Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></button>
+
+                </div>
             </div>
-            <button onClick={() => props.cart(props.device)} className='cart'>
-                <p>Add To Cart</p>
-            </button>
         </div>
+
+
+
+
     );
 };
 
