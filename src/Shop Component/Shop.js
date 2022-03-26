@@ -10,7 +10,7 @@ const Shop = () => {
 
     const [carts, setcarts] = useState([]);
 
-    const [chose, setchose] = useState([]);
+
 
 
     useEffect(() => {
@@ -33,16 +33,6 @@ const Shop = () => {
     const remove = () => {
         setcarts([]);
     }
-
-
-    // const max = carts.length;
-    // const min = 0;
-    // const chooseitem = (min, max) = {
-
-    //     const items = Math.floor(Math.random() * (max - min));
-    //     setchose(items);
-
-    // }
 
 
 
@@ -77,7 +67,7 @@ const Shop = () => {
                         carts.map(cart => <li
                             key={cart.id}
                         >Name: {cart.name}
-                            
+
                         </li>)
 
                     }
