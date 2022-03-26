@@ -8,7 +8,7 @@ const Shop = () => {
 
     const [devices, setdevices] = useState([]);
 
-    const [carts, setcarts] = useState([]);
+    const [cart, setcart] = useState([]);
 
 
 
@@ -22,20 +22,32 @@ const Shop = () => {
 
 
     const addcart = (device) => {
-        if (carts.length <= 3) {
-            const newCart = [...carts, device];
-            setcarts(newCart);
+        if (cart.length <= 3) {
+            const newCart = [...cart, device];
+            setcart(newCart);
         }
         else {
             alert('sorry!only allow 4 items')
         }
     }
     const remove = () => {
-        setcarts([]);
+        setcart([]);
     }
 
+    const chooseOne = (selecteditem) => {
+        const newCart = [...cart, selecteditem]
+        return newCart[Math.floor(Math.random() * newCart.length)]
 
 
+
+    };
+    const chooseOneCart = () => {
+
+        const randomItem = chooseOne();
+        const randomProduct = cart.filter((item) => item === randomItem)
+        setcart(randomProduct)
+
+    }
 
 
 
@@ -59,12 +71,12 @@ const Shop = () => {
             <div className='item'>
                 <h3>Item Choose</h3>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button className="btn btn-primary me-md-2" type="button">Choose any 1</button>
+                    <button onClick={chooseOneCart} className="btn btn-primary me-md-2" type="button">Choose any 1</button>
                     <button onClick={() => remove()} className="btn btn-primary" type="button">Remove All</button>
                 </div>
                 <ol>
                     {
-                        carts.map(cart => <li
+                        cart.map(cart => <li
                             key={cart.id}
                         >Name: {cart.name}
 
